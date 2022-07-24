@@ -67,10 +67,26 @@ mouse:
   double_click: { threshold: 300 }
   triple_click: { threshold: 300 }
 key_bindings:
-  - { key: B,         mods: Alt,       chars: "\x1bb"                       }
-  - { key: D,         mods: Alt,       chars: "\x1bd"                       }
-  - { key: F,         mods: Alt,       chars: "\x1bf"                       }
-  - { key: T,         mods: Alt,       chars: "\x1bt"                       }
+  - { key: B, mods: Alt, chars: "\x1bb" }
+  - { key: D, mods: Alt, chars: "\x1bd" }
+  - { key: F, mods: Alt, chars: "\x1bf" }
+  - { key: T, mods: Alt, chars: "\x1bt" }
+  - { key: J, mods: Alt, chars: "\x1bj" }
+  - { key: K, mods: Alt, chars: "\x1bk" }
+  - { key: H, mods: Alt, chars: "\x1bh" }
+  - { key: L, mods: Alt, chars: "\x1bl" }
+  - { key: W, mods: Alt, chars: "\x1bw" }
+  - { key: P, mods: Alt, chars: "\x1bp" }
+  - { key: 1, mods: Alt, chars: "\x1b1" }
+  - { key: 2, mods: Alt, chars: "\x1b2" }
+  - { key: 3, mods: Alt, chars: "\x1b3" }
+  - { key: 4, mods: Alt, chars: "\x1b4" }
+  - { key: 5, mods: Alt, chars: "\x1b5" }
+  - { key: 6, mods: Alt, chars: "\x1b6" }
+  - { key: 7, mods: Alt, chars: "\x1b7" }
+  - { key: 8, mods: Alt, chars: "\x1b8" }
+  - { key: 9, mods: Alt, chars: "\x1b9" }
+  - { key: 0, mods: Alt, chars: "\x1b0" }
 
 #######################################################################################
 #                             PREDEFINED COLOR SCHEMES                                #
@@ -79,61 +95,59 @@ schemes:
   # Tokyo Night theme, based on both:
   #   https://github.com/ghifarit53/tokyonight-vim
   #   https://github.com/enkia/tokyo-night-vscode-theme
-  tokyo-night: &tokyo-night
-    # Default colors
+  tokyo-night: &tokyo-night # Default colors
     primary:
-      background: '0x1a1b26'
-      foreground: '0xa9b1d6'
+      background: "0x1a1b26"
+      foreground: "0xa9b1d6"
 
     # Normal colors
     normal:
-      black:   '0x32344a'
-      red:     '0xf7768e'
-      green:   '0x9ece6a'
-      yellow:  '0xe0af68'
-      blue:    '0x7aa2f7'
-      magenta: '0xad8ee6'
-      cyan:    '0x449dab'
-      white:   '0x787c99'
+      black: "0x32344a"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xad8ee6"
+      cyan: "0x449dab"
+      white: "0x787c99"
 
     # Bright colors
     bright:
-      black:   '0x444b6a'
-      red:     '0xff7a93'
-      green:   '0xb9f27c'
-      yellow:  '0xff9e64'
-      blue:    '0x7da6ff'
-      magenta: '0xbb9af7'
-      cyan:    '0x0db9d7'
-      white:   '0xacb0d0'
+      black: "0x444b6a"
+      red: "0xff7a93"
+      green: "0xb9f27c"
+      yellow: "0xff9e64"
+      blue: "0x7da6ff"
+      magenta: "0xbb9af7"
+      cyan: "0x0db9d7"
+      white: "0xacb0d0"
 
-  tokyo-night-storm: &tokyo-night-storm
-    # Default colors
+  tokyo-night-storm: &tokyo-night-storm # Default colors
     primary:
-      background: '0x24283b'
-      foreground: '0xa9b1d6'
+      background: "0x24283b"
+      foreground: "0xa9b1d6"
 
     # Normal colors
     normal:
-      black:   '0x32344a'
-      red:     '0xf7768e'
-      green:   '0x9ece6a'
-      yellow:  '0xe0af68'
-      blue:    '0x7aa2f7'
-      magenta: '0xad8ee6'
-      cyan:    '0x449dab'
-      white:   '0x9699a8'
+      black: "0x32344a"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xad8ee6"
+      cyan: "0x449dab"
+      white: "0x9699a8"
 
     # Bright colors
     bright:
-      black:   '0x444b6a'
-      red:     '0xff7a93'
-      green:   '0xb9f27c'
-      yellow:  '0xff9e64'
-      blue:    '0x7da6ff'
-      magenta: '0xbb9af7'
-      cyan:    '0x0db9d7'
-      white:   '0xacb0d0'
+      black: "0x444b6a"
+      red: "0xff7a93"
+      green: "0xb9f27c"
+      yellow: "0xff9e64"
+      blue: "0x7da6ff"
+      magenta: "0xbb9af7"
+      cyan: "0x0db9d7"
+      white: "0xacb0d0"
 #######################################################################################
 #                                  COLOR SCHEME                                       #
 #           1. tokyo-ngiht                                                            #
