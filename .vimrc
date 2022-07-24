@@ -6,13 +6,14 @@ call plug#begin('~/.vim/plugged')
 	Plug 'mattn/emmet-vim'
 	Plug 'nathanaelkane/vim-indent-guides'
 	Plug 'tpope/vim-sensible'
-	Plug 'scrooloose/nerdtree'
+	Plug 'junegunn/fzf'
+	Plug 'junegunn/fzf.vim'
 	" Airline
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'vim-airline/vim-airline'
 	" Visual Plugin
-	Plug 'ryanoasis/vim-devicons'
 	Plug 'kyazdani42/nvim-web-devicons'
+	Plug 'kyazdani42/nvim-tree.lua'
 	Plug 'romgrk/barbar.nvim'
 	" Syntax Hisghlight Plugins
 	Plug 'scrooloose/syntastic'
@@ -24,6 +25,9 @@ call plug#begin('~/.vim/plugged')
 	Plug 'rust-lang/rust.vim'
 	Plug 'mracos/mermaid.vim'
 call plug#end()
+
+" Lua Script
+:lua require('nvim-tree').setup()
 
 " Key Mapping
 " Split Window
@@ -89,20 +93,13 @@ let g:airline_powerline_fonts=2
 " Vim IndentGuides
 let g:indent_guides_enable_on_vim_startup = 1
 
-" NERDTree Keymaps
-nnoremap <C-b> <Cmd>call NERDTreeToggleAndRefresh()<CR>
-nnoremap nerd <Cmd>call NERDTreeToggleAndRefresh()<CR>
-function NERDTreeToggleAndRefresh()
-	:NERDTreeToggle
-	if g:NERDTree.IsOpen()
-		:NERDTreeRefreshRoot
-	endif
-endfunction
+" NvimTree Keymaps
+nnoremap <silent>    <C-b> <Cmd>NvimTreeToggle<CR>
 
-" Start NERDTree when Vim starts with a directory argument.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
-    \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
+" fzf.vim Keymaps
+nnoremap <silent>    <C-p> <Cmd>Files<CR>
+nnoremap <silent>    <C-f> <Cmd>BLines<CR>
+nnoremap <silent>    <C-h> <Cmd>History<CR>
 
 " BarBarvim Keymaps
 " Move to previous/next
