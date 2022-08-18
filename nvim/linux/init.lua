@@ -41,6 +41,7 @@ call('plug#begin', '~/.config/nvim/plugged')
     Plug 'wakatime/vim-wakatime'
     -- # Syntax
     Plug 'scrooloose/syntastic'
+    Plug 'pantharshit00/vim-prisma'
     Plug 'pangloss/vim-javascript'
 call('plug#end')
 
