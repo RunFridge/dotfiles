@@ -1,10 +1,10 @@
 # Arch Linux
 
-> Arch 리눅스 설정 파일 모음입니다.
+> Configuration for Arch Linux
 
 ## Setup Guide
 
-1. AUR(Arch User Repository) 관리 툴 Yay 설치 ([참조](https://github.com/Jguer/yay#installation))
+1. Install Yay, a helper for AUR(Arch User Repository) ([reference](https://github.com/Jguer/yay#installation))
 
 ```sh
 pacman -Syu --needed git base-devel
@@ -13,13 +13,13 @@ cd yay-bin
 makepkg -si
 ```
 
-2. Neovim 설치 ([참조](https://github.com/neovim/neovim/wiki/Installing-Neovim#arch-linux))
+2. Install Neovim ([reference](https://github.com/neovim/neovim/wiki/Installing-Neovim#arch-linux))
 
 ```sh
 yay neovim-git
 ```
 
-3. Packer 설치 ([참조](https://github.com/wbthomason/packer.nvim#quickstart))
+3. Install Packer ([reference](https://github.com/wbthomason/packer.nvim#quickstart))
 
 ```sh
 mkdir -p ~/.local/share/nvim/site/pack/packer/start
