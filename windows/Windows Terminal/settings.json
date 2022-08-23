@@ -1,0 +1,67 @@
+{
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "defaultProfile": "{46b0a508-6a53-43f9-ac8e-3ec13c151925}",
+  "useAcrylicInTabRow": true,
+  "centerOnLaunch": true,
+  "profiles": {
+    "defaults": {
+      "colorScheme": "Tokyo Night Storm",
+      "cursorShape": "vintage",
+      "font": {
+        "face": "FiraCode NF",
+        "features": { "liga": 1 },
+        "size": 12,
+        "weight": "normal"
+      },
+      "bellStyle": "window",
+      "useAcrylic": true,
+      "padding": "20"
+    },
+    "list": [
+      {
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "name": "Windows PowerShell"
+      },
+      {
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
+        "name": "Command Prompt"
+      },
+      {
+        "guid": "{46b0a508-6a53-43f9-ac8e-3ec13c151925}",
+        "name": "Git Bash",
+        "hidden": false,
+        "commandline": "######-- SET TO GIT BASH BINARY DIR --######",
+        "startingDirectory": "######-- SET TO HOME DIR --######",
+        "icon": "######-- SET TO GIT BASH ICON DIR --######"
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "name": "Tokyo Night Storm",
+      "foreground": "#a9b1dc",
+      "background": "#24283b",
+      "cursorColor": "#c0caf5",
+      "selectionBackground": "#28344a",
+      "black": "#414868",
+      "red": "#f7768e",
+      "green": "#73daca",
+      "yellow": "#e0af68",
+      "blue": "#7aa2f7",
+      "purple": "#bb9af7",
+      "cyan": "#7dcfff",
+      "white": "#c0caf5",
+      "brightBlack": "#414868",
+      "brightRed": "#f7768e",
+      "brightGreen": "#73daca",
+      "brightYellow": "#e0af68",
+      "brightBlue": "#7aa2f7",
+      "brightPurple": "#bb9af7",
+      "brightCyan": "#7dcfff",
+      "brightWhite": "#c0caf5"
+    }
+  ]
+}
