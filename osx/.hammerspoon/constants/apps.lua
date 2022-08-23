@@ -3,10 +3,11 @@ local apps = {
     terminal = "Terminal",
     iTerm = "iTerm",
     alacritty = "Alacritty",
+    kitty = "kitty",
     -- Browsers
     safari = "Safari",
     brave = "Brave Browser",
-    chrome = "Chrome",
+    chrome = "Google Chrome",
     firefox = "Firefox",
     whale = "NAVER whale",
     -- Code Editors
@@ -30,7 +31,7 @@ local apps = {
     slack = "Slack",
     naverworks = "NAVER WORKS",
     kakao = "KakaoTalk",
-		line = "LINE",
+    line = "LINE",
     zoom = "zoom.us",
     -- Music Playes
     iTunes = "Music",
