@@ -4,6 +4,7 @@
   "defaultProfile": "{46b0a508-6a53-43f9-ac8e-3ec13c151925}",
   "useAcrylicInTabRow": true,
   "centerOnLaunch": true,
+  "copyOnSelect": true,
   "profiles": {
     "defaults": {
       "colorScheme": "Tokyo Night Storm",
@@ -14,9 +15,9 @@
         "size": 12,
         "weight": "normal"
       },
-      "bellStyle": "window",
+      "bellStyle": "none",
       "useAcrylic": true,
-      "padding": "20"
+      "padding": "10"
     },
     "list": [
       {
