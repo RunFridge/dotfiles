@@ -10,6 +10,7 @@ local apps = {
     chrome = "Google Chrome",
     firefox = "Firefox",
     whale = "NAVER whale",
+    arc = "Arc",
     -- Code Editors
     code = "Visual Studio Code",
     sublime = "Sublime Text",
